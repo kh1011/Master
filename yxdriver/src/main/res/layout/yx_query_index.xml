@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jude.fitsystemwindowlayout.FitSystemWindowsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/topbar_bg">
+
+        <ImageButton style="@style/topbar_return_img" />
+
+        <Button
+            style="@style/topbar_right_btn"
+            android:text=""
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/topbar_title"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="搜索" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/search_index_bg">
+
+        <ImageView
+            android:id="@+id/query_index_img_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/start" />
+
+        <EditText
+            android:id="@+id/query_index_orign"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/query_index_img_start"
+            android:background="@color/transparent"
+            android:hint="请输入出发地"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#777777"
+            android:textSize="@dimen/text_size_16sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/search_index_bg">
+
+        <ImageView
+            android:id="@+id/query_index_img_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/end" />
+
+        <EditText
+            android:id="@+id/query_index_site"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/query_index_img_end"
+            android:background="@color/transparent"
+            android:hint="请输入目的地"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#777777"
+            android:textSize="@dimen/text_size_16sp" />
+    </RelativeLayout>
+
+    <com.yxdriver.app.view.MyGridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:horizontalSpacing="10dip"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dip" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/search_index_bg">
+
+        <TextView
+            android:id="@+id/query_index_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="出行时间："
+            android:paddingLeft="10.7dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/query_index"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/query_index_text"
+            android:background="@color/transparent"
+            android:hint="请选择出行时间"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/readed"
+            android:textColorHint="#777777"
+            android:textSize="@dimen/text_size_16sp" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/query_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/button_login_btn"
+        android:text="搜索"
+        android:textColor="@color/white" />
+
+</com.jude.fitsystemwindowlayout.FitSystemWindowsLinearLayout>

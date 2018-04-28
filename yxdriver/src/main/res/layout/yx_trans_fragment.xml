@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff1f7"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <RelativeLayout style="@style/topbar_bg">
+
+        <ImageButton
+            style="@style/topbar_return_img"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/topbar_title"
+            android:layout_centerHorizontal="true"
+            android:text="我的订单" />
+
+        <Button
+            style="@style/topbar_right_btn"
+            android:text=""
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include layout="@layout/toolbar_tab" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

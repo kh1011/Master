@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jude.fitsystemwindowlayout.FitSystemWindowsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff1f7"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/topbar_bg">
+
+        <ImageButton style="@style/topbar_return_img" />
+
+        <Button
+            style="@style/topbar_right_btn"
+            android:text=""
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/topbar_title"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="抢单中" />
+    </RelativeLayout>
+
+    <com.yxdriver.app.view.SafeView
+        android:id="@+id/cl_loding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:elevation="10dp" />
+</com.jude.fitsystemwindowlayout.FitSystemWindowsLinearLayout>

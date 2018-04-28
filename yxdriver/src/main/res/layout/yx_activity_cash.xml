@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jude.fitsystemwindowlayout.FitSystemWindowsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff1f7"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/topbar_bg">
+
+        <ImageButton style="@style/topbar_return_img" />
+
+        <Button
+            style="@style/topbar_right_btn"
+            android:text=""
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/topbar_title"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="提现" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="姓名："/>
+        <EditText
+            android:id="@+id/bankuser_name"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_item_text_bg"
+            android:hint="姓名"
+            android:paddingLeft="10dp"
+            android:textColor="#383838"
+            android:textColorHint="#d2d2d2"
+            android:textSize="@dimen/text_size_13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="银行卡号："/>
+
+        <EditText
+            android:id="@+id/bank_code"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_item_text_bg"
+            android:hint="银行卡号"
+            android:paddingLeft="10dp"
+            android:textColor="#383838"
+            android:textColorHint="#d2d2d2"
+            android:textSize="@dimen/text_size_13sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="开户银行："/>
+        <EditText
+            android:id="@+id/bank_name"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_item_text_bg"
+            android:hint="开户银行"
+            android:paddingLeft="10dp"
+            android:textColor="#383838"
+            android:textColorHint="#d2d2d2"
+            android:textSize="@dimen/text_size_13sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="开户支行："/>
+        <EditText
+            android:id="@+id/subbranch_name"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_item_text_bg"
+            android:hint="开户支行"
+            android:paddingLeft="10dp"
+            android:textColor="#383838"
+            android:textColorHint="#d2d2d2"
+            android:textSize="@dimen/text_size_13sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="开户地址："/>
+        <EditText
+            android:id="@+id/bank_address"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_item_text_bg"
+            android:hint="开户地址"
+            android:paddingLeft="10dp"
+            android:textColor="#383838"
+            android:textColorHint="#d2d2d2"
+            android:textSize="@dimen/text_size_13sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="提现金额："/>
+        <EditText
+            android:id="@+id/bank_money"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_item_text_bg"
+            android:hint="提现金额"
+            android:paddingLeft="10dp"
+            android:textColor="#383838"
+            android:textColorHint="#d2d2d2"
+            android:textSize="@dimen/text_size_13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cash_poundage"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="手续费：2元"
+        android:textSize="12sp"
+        android:padding="10dp"
+        android:textColor="@color/pink"
+        android:layout_marginLeft="10dp"
+        android:visibility="invisible"/>
+
+
+
+    <Button
+        android:id="@+id/cash_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_login_btn"
+        android:text="提现"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="提现手续费0.2%，最低收取2元"
+        android:textSize="12sp"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"/>
+</com.jude.fitsystemwindowlayout.FitSystemWindowsLinearLayout>

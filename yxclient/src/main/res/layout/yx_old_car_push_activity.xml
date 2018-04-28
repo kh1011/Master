@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jude.fitsystemwindowlayout.FitSystemWindowsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff1f7"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/topbar_bg">
+
+        <Button
+            style="@style/topbar_left_btn"
+            android:text="取消" />
+
+        <TextView
+            style="@style/topbar_title"
+            android:layout_centerHorizontal="true"
+            android:text="发帖" />
+
+        <Button
+            android:id="@+id/btn_push"
+            style="@style/topbar_right_btn"
+            android:text="发布" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/article_post_delete"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/holo_red_light"
+            android:gravity="center"
+            android:text="@string/post_delete_tv_d"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <com.yxclient.app.view.MyGridView
+            android:id="@+id/rcv_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clipToPadding="false"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:layout_below="@+id/et_content"
+            android:paddingTop="10dp" />
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/button_login_edit"
+            android:gravity="center_vertical"
+            android:hint="主题"
+            android:inputType="textMultiLine"
+            android:maxLength="140"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/button_login_edit"
+            android:gravity="top"
+            android:hint="请输入车辆描述"
+            android:inputType="textMultiLine"
+            android:maxLength="140"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/et_title"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/rcv_img"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="请输入备注信息"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="#383838"
+            android:textColorHint="#d2d2d2"
+            android:textSize="@dimen/text_size_15sp" />
+    </RelativeLayout>
+    </ScrollView>
+</com.jude.fitsystemwindowlayout.FitSystemWindowsLinearLayout>

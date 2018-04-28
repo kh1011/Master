@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Master.iml" filepath="$PROJECT_DIR$/Master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QRCodeLibrary/QRCodeLibrary.iml" filepath="$PROJECT_DIR$/QRCodeLibrary/QRCodeLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZBLibrary/ZBLibrary.iml" filepath="$PROJECT_DIR$/ZBLibrary/ZBLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photopicker/photopicker.iml" filepath="$PROJECT_DIR$/photopicker/photopicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tiny/tiny.iml" filepath="$PROJECT_DIR$/tiny/tiny.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yxclient/yxclient.iml" filepath="$PROJECT_DIR$/yxclient/yxclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yxdriver/yxdriver.iml" filepath="$PROJECT_DIR$/yxdriver/yxdriver.iml" />
+    </modules>
+  </component>
+</project>

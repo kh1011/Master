@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jude.fitsystemwindowlayout.FitSystemWindowsLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout style="@style/topbar_bg">
+
+        <ImageButton style="@style/topbar_return_img" />
+
+        <Button
+            style="@style/topbar_right_btn"
+            android:text=""
+             />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/topbar_title"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="反馈意见" />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/add_itea_content"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_login_edit"
+        android:gravity="top"
+        android:hint="反馈意见"
+        android:maxLength="100"
+        android:padding="10dp"
+        android:textColor="#383838"
+        android:textColorHint="#d2d2d2"
+        android:textSize="@dimen/text_size_13sp" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_login_btn"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_15sp" />
+
+</com.jude.fitsystemwindowlayout.FitSystemWindowsLinearLayout>

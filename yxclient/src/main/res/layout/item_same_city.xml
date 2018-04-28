@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_user_headimg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/user_loc_marker_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/civ_user_headimg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_c_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="咪来咪"
+                android:textColor="#525252"
+                android:textSize="14.7sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017年9月25日 16:07:24"
+                android:textColor="#777777"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--<com.yxdriver.app.view.MyGridView
+        android:id="@+id/gv_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="11.3dp"
+        android:numColumns="3"/>-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingLeft="15dp" />
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25.3dp"
+        android:layout_marginTop="25.3dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:text="删除"
+        android:textColor="@color/main_blue" />
+
+    <include layout="@layout/line_large" />
+</LinearLayout>

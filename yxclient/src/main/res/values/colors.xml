@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="welcomeText">#4682B4</color>
+    <color name="progressColor">#5588FF</color>
+    <color name="bottomBG">#ff8903</color>
+    <color name="textCollor">#343434</color>
+    <color name="splitLine">#dcdcdc</color>
+    <color name="phoneNumb">#ff8905</color>
+    <color name="normal_text_color">#666</color>
+    <color name="normal_sub_title_color">#999</color>
+    <color name="hint_text_color">#999</color>
+    <color name="divider_color">#f0f0f0</color>
+    <color name="common_bg">#ffffff</color>
+    <color name="title_color">#333</color>
+    <color name="transparent">#0000</color>
+    <color name="main_blue">#6e99ff</color>
+    <color name="color_bg_normal">#383838</color>
+    <color name="gray_e6">#e6e6e6</color>
+    <color name="text_37">#373737</color>
+    <color name="bg_e1">#e1e1e1</color>
+    <color name="gray_line">#66b4b4b4</color>
+    <color name="kinds_selected">#6fa5ff</color>
+    <color name="kinds_default">#383838</color>
+    <color name="style_red">#ff4c41</color>
+    <color name="style_divider_color">#C9C7CD</color>
+    <color name="holo_red_light">#ffff4444</color>
+    <color name="holo_red_dark">#ffcc0000</color>
+    <color name="navpage">#FFE1E8EB</color>
+
+    <color name="textColor_1">#00bf8f</color>
+    <color name="textColor_2">#333333</color>
+    <color name="textColor_3">#d2d2d2</color>
+
+    <color name="bg_pic_select">#181819</color>
+    <color name="photopicker_background">#181819</color>
+</resources>

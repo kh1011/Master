@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jude.fitsystemwindowlayout.FitSystemWindowsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff1f7"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/topbar_bg">
+
+        <ImageButton style="@style/topbar_return_img" />
+
+        <Button
+            style="@style/topbar_right_btn"
+            android:text=""
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/topbar_title"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="验证司机" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/verification_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_item_text_bg"
+        android:hint="请输入司机车牌号或者手机号"
+        android:paddingLeft="10dp"
+        android:textColor="#383838"
+        android:textColorHint="#d2d2d2"
+        android:textSize="@dimen/text_size_13sp" />
+
+    <Button
+        android:id="@+id/verification_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_login_btn"
+        android:text="验证"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14sp" />
+</com.jude.fitsystemwindowlayout.FitSystemWindowsLinearLayout>

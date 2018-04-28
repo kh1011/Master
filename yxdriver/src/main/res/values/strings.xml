@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">顺心使舵司机端</string>
+    <string name="strPoint">指示器</string>
+    <string name="immediatelyEnter">立即体验</string>
+    <string name="login">登录</string>
+    <string name="author_info">云游旅程 © 1510624947@qq.com</string>
+    <string name="app_introduce">云游司机V1.0</string>
+    <string name="company">新平顺心使舵科技有限公司，是一家致力于以网络运输行业为核心，涵盖数码产品、特色特产、
+        生活用品销售等领域的专业管理流通公司，擅长于货品流通规划、运营管理、流程重组、加盟体系建立、终端流程规划与执行等服务项目，
+        尤其注重从事货物流通经营、终端零售与咨询服务。\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;新平顺心使舵科技有限公司注资10万元整，于2017年8月10日正式成立运营。\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;公司坐落于美丽的云南省玉溪市新平彝族傣族自治县桂台路13号。
+        \n&#160;&#160;&#160;&#160;&#160;&#160;&#160;公司主营：物流信息服务、交通信息服务、各类电子产品销售、各地方土特产销售及生活用品销售（包含实体店销售及网络销售）。\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;新平顺心使舵科技有限公司与您共享成功经验，缔造您我辉煌！新平顺心使舵科技有限公司，以国际化的品牌管理标准为指导，以最终满足大众需求为目标，
+        本着"诚信、专业、创新"的服务 理念，深入普通大众内部，为普众量身打造具有针对性的解决方案，切实提升各项商品流通，使企业在激烈的市场竞争中不断创新，共建卓越！</string>
+
+    <string name="about_app">&#160;&#160;&#160;&#160;&#160;&#160;&#160;顺心使舵APP：是一款提供出行、运输信息服务为中心的平台，同时也为拉动当地经济而搭建的土特产销售软件。\n\n
+                             &#160;&#160;&#160;&#160;&#160;&#160;&#160;我们价格合理只为您的出行更加实惠、省心。\n\n
+                             &#160;&#160;&#160;&#160;&#160;&#160;&#160;我们平台开放只为给您搭建更真实、便捷的交易平台。\n\n
+                             &#160;&#160;&#160;&#160;&#160;&#160;&#160;我们货真价实只为您能真切享受到当地的味道。\n\n
+                             &#160;&#160;&#160;&#160;&#160;&#160;&#160;我们诚信经营，服务为先！\n\n
+    </string>
+    <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="finish">完成</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string>
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+    <string name="glide_plus_icon_string">android.resource://</string>
+    <string name="post_delete_tv_d">拖动到此处，进行删除</string>
+    <string name="post_delete_tv_s"> 放开手指，进行删除</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="updatecontent">1.修复BUG\n2.优化界面</string>
+</resources>

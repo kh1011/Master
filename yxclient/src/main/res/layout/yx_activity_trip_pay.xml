@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jude.fitsystemwindowlayout.FitSystemWindowsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff1f7"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/topbar_bg">
+
+        <ImageButton style="@style/topbar_return_img" />
+
+        <TextView
+            style="@style/topbar_title"
+            android:layout_centerHorizontal="true"
+            android:text="订单支付" />
+
+        <Button
+            style="@style/topbar_right_btn"
+            android:text=""
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/trip_pay_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/red_btn_bg_color"
+                    android:textSize="@dimen/text_size_18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="元"
+                    android:textColor="#383838"
+                    android:textSize="@dimen/text_size_14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/trip_pay_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="顺风车"
+                android:textColor="@color/main_blue"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center|left">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/start" />
+
+                <TextView
+                    android:id="@+id/trip_pay_origin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="昆明市黑龙潭公园"
+                    android:textColor="#383838"
+                    android:textSize="@dimen/text_size_15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center|left">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/end" />
+
+                <TextView
+                    android:id="@+id/trip_pay_site"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="澄江县抚仙湖"
+                    android:textColor="#383838"
+                    android:textSize="@dimen/text_size_15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/order_bg"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/wechat"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/btn_cancel_order_radio"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="微信支付"
+                android:textColor="@color/radio_group_selector"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eff1f7" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/pay"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/btn_cancel_order_radio"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="支付宝支付"
+                android:textColor="@color/radio_group_selector"
+                android:textSize="@dimen/text_size_15sp" />
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eff1f7" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/coins"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/btn_cancel_order_radio"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="现金支付"
+                android:textColor="@color/radio_group_selector"
+                android:textSize="@dimen/text_size_15sp" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eff1f7" />
+
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/coins"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/btn_cancel_order_radio"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="余额支付"
+                android:textColor="@color/radio_group_selector"
+                android:textSize="@dimen/text_size_15sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_login_btn"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_12sp" />
+</com.jude.fitsystemwindowlayout.FitSystemWindowsLinearLayout>

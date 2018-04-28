@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.yxdriver.app.poisearch.searchmodule.CityInputWidget
+        android:id="@+id/city_input_widget"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding">
+
+    </com.yxdriver.app.poisearch.searchmodule.CityInputWidget>
+
+    <com.yxdriver.app.poisearch.searchmodule.CurrCityWidget
+        android:id="@+id/curr_city_widget"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/city_input_widget"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_marginTop="@dimen/padding">
+
+    </com.yxdriver.app.poisearch.searchmodule.CurrCityWidget>
+
+    <com.yxdriver.app.poisearch.searchmodule.CityListWidget
+        android:id="@+id/city_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/curr_city_widget"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="50dp">
+
+    </com.yxdriver.app.poisearch.searchmodule.CityListWidget>
+
+    <com.yxdriver.app.view.SideBar
+        android:id="@+id/sidrbar"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/curr_city_widget"
+        android:layout_gravity="right|center" />
+</merge>

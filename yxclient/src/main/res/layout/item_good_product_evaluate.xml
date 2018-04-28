@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_user_headimg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/user_loc_marker_icon"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/civ_user_headimg"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/tv_user_c_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="咪来咪"
+                android:textSize="14.7sp"
+                android:textColor="#525252"/>
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017年9月25日 16:07:24"
+                android:textSize="10sp"
+                android:textColor="#777777"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+<!--    <com.yxdriver.app.view.MyGridView
+        android:id="@+id/gv_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="11.3dp"
+        android:numColumns="3"/>-->
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ellipsize="end"
+        android:lines="4"
+        android:text="下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪下午回玉溪"
+        android:textSize="18sp"
+        android:textColor="#383838"/>
+    <include
+        layout="@layout/line_large"/>
+</LinearLayout>

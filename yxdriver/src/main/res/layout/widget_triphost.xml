@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg">
+
+    <com.yxdriver.app.trip.tripmodule.TitleBarWidget
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignParentTop="true"/>
+
+    <com.yxdriver.app.trip.tripmodule.HostMapWidget
+        android:id="@+id/host_map_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"/>
+
+    <com.yxdriver.app.trip.tripmodule.ChooseLocationWidget
+        android:id="@+id/choose_location_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/padding"/>
+
+    <ImageView
+        android:id="@+id/loc_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@id/choose_location_widget"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/padding"
+        android:src="@mipmap/loc" />
+
+    <ImageView
+        android:id="@+id/loc_marker_iv"
+        android:layout_width="@dimen/start_loc_marker_w"
+        android:layout_height="@dimen/start_loc_marker_h"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/start_loc_marker_half_h"
+        android:src="@mipmap/sc_center_marker_icon" />
+
+
+</RelativeLayout>

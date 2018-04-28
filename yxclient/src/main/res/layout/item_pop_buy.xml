@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg_pop">
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#E6ffffff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10.7dp"
+            android:paddingTop="10.7dp"
+            android:paddingRight="10.7dp">
+
+            <ImageView
+                android:id="@+id/iv_title_image"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="#fff" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/iv_title_image"
+                android:layout_toRightOf="@+id/iv_title_image"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_good_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#ff6600"
+                    android:textSize="16.7sp" />
+
+                <TextView
+                    android:id="@+id/tv_month_sales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="月销量500件"
+                    android:textColor="#a0a0a0"
+                    android:textSize="10.7sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_close"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="27.7dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10.7dp"
+            android:paddingRight="10.7dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="购买数量"
+                android:textSize="14.7sp"
+                android:textColor="#383838"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_alignParentRight="true">
+                <include
+                    layout="@layout/view_add_reduce"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/weight_"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="商品重量："
+                android:textSize="12sp"
+                android:paddingLeft="10.7dp"
+                android:textColor="#383838"/>
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="20kg"
+                android:textSize="14sp"
+                android:paddingLeft="10.7dp"
+                android:textColor="#383838"/>
+        </LinearLayout>
+        <com.yxclient.app.view.MyGridView
+            android:id="@+id/grid_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:numColumns="4"
+            android:scrollbars="none">
+
+        </com.yxclient.app.view.MyGridView>
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#6e99ff"
+            android:text="确定"
+            android:textSize="16.7sp"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <item type="id" name="tag_one">1</item>
+    <item type="id" name="tag_two">2</item>
+    <item type="id" name="tag_three">3</item>
+    <item type="id" name="tag_four">4</item>
+    <item type="id" name="tag_five">5</item>
+    <item type="id" name="tag_six">6</item>
+    <item type="id" name="glide_tag" />
+    <item type="id" name="tag_glide" />
+
+
+
+</resources>

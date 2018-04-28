@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff1f7"
+    android:scrollbars="none">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="match_parent"
+                android:layout_height="302dp"
+                android:adjustViewBounds="true"
+                android:background="#fff"
+                android:maxHeight="302dp"
+                android:padding="20dp"
+                android:src="@drawable/ic_phone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【今年新品】OPPO R11 全网通4G手机前后2000万拍照双摄 oppor11"
+                    android:textColor="#383838"
+                    android:textSize="14.7sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_good_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥2999.00"
+                        android:textColor="#ff6600"
+                        android:textSize="22.7sp" />
+
+                    <TextView
+                        android:id="@+id/tv_good_base_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="￥8000"
+                        android:textColor="#6e6e6e"
+                        android:textSize="12.7sp" />
+
+                    <TextView
+                        android:id="@+id/tv_good_month_sales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="月销量500件"
+                        android:textColor="#a0a0a0"
+                        android:textSize="11.3sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/goods_info_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:text="商家联系电话：1232131"
+                    android:textColor="@color/main_blue"
+                    android:textSize="@dimen/text_size_12sp" />
+                <TextView
+                    android:id="@+id/goods_info_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:text="备注："
+                    android:textColor="@color/main_blue"
+                    android:textSize="@dimen/text_size_12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/promotion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="距离活动结束时间为"
+                    android:letterSpacing="0.2"
+                    android:textColor="@color/holo_red_light"
+                    android:textSize="@dimen/text_size_18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvtime1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="12"
+                        android:textColor="@color/holo_red_dark"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tvtime2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="12"
+                        android:textColor="@color/holo_red_dark"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tvtime3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="13"
+                        android:textColor="@color/holo_red_dark"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/promotion_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="活动内容:"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/holo_red_light"
+                    />
+                <TextView
+                    android:id="@+id/item_promotion_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:textColor="@color/bg_pic_select"
+                    android:text="【今年新品】OPPO R11 全网通4G"
+                    android:textSize="@dimen/text_size_14sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

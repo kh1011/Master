@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="支付方式"
+        android:textColor="@color/main_blue"
+        android:textSize="@dimen/text_size_15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d2d2d2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/dialog_pay_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb01"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/wechat"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/addr_checkbox_style"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="微信支付"
+                android:textColor="@color/radio_group_selector" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d2d2d2" />
+
+            <RadioButton
+                android:id="@+id/rb02"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/pay"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/addr_checkbox_style"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="支付宝支付"
+                android:textColor="@color/radio_group_selector" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d2d2d2" />
+
+            <RadioButton
+                android:id="@+id/rb03"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/coins"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/addr_checkbox_style"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="余额支付"
+                android:textColor="@color/radio_group_selector" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dialog_pay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_login_btn"
+        android:text="支付"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_12sp" />
+</LinearLayout>
